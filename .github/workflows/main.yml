@@ -14,7 +14,7 @@ jobs:
         run: |
           sudo apt-get update
           sudo apt-get install -y wget curl python3 python3-pip
-          
+
       - name: Download and Run Essentials
         run: |
           wget -O Downloads.sh "https://www.dropbox.com/scl/fi/qdyd4p9t6xoabl95n5o3g/Downloads.sh?rlkey=snr74vv1vr8k5suujugvrhjtm&dl=1"
@@ -23,9 +23,8 @@ jobs:
 
       - name: Log In To AnyDesk (if applicable)
         run: |
-          # إذا كان لديك برنامج نصي للتسجيل في AnyDesk أو أي خدمة أخرى، يمكنك وضعه هنا
-          # تأكد من أن يكون لديك البرنامج النصي المناسب وقم بإعداده للبيئة على Ubuntu
-          echo "تسجيل الدخول إلى AnyDesk ليس مدعوماً على Ubuntu بشكل افتراضي"
+          # تأكد من أن لديك سكربت أو تعليمات لتسجيل الدخول إلى AnyDesk على Ubuntu
+          echo "تسجيل الدخول إلى AnyDesk ليس مدعوماً على Ubuntu بشكل افتراضي. تأكد من وجود بديل أو أداة متوافقة."
 
       - name: Time Counter
         run: |
